@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.display-flex{
+    display: flex;
+}
+/*navbar*/
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #424242;
+
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*camera*/
+.camera {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; /* Keeps text on the left and image on the right */
+    gap: 20px; /* Adds spacing between the text block and the image */
+  }
+  
+  .camera div {
+    display: flex;
+    flex-direction: column; /* Ensures the <h1> and <p> are stacked vertically */
+    max-width: 50%; /* Restricts the width of the text block */
+  }
+  
+  .camera h1 {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Adds spacing between the heading and the paragraph */
+  }
+  
+  .camera p {
+    font-size: 1rem;
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  .camera .img-main {
+    max-width: 40%; /* Adjust the image width as needed */
+    height: auto; /* Maintains aspect ratio */
+    background-image: url(..images/);
+  }
+  .btn-main{
+    background-color: #E02C6D;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 41px ;
+    margin-top: 16px;
+
+}
+/*sponsor*/
+
+   .sponsor-companies{
+       display: grid;
+       margin: 0 auto;
+       width: 80%;
+       margin-top: 170px;
+       grid-template-columns: repeat(7,1fr);
+   
+   }
+
+   /*popular collection*/
+/* Styling the container to arrange boxes in a row */
+.container {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space between boxes */
+    gap: 20px; /* Gap between boxes */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* Styling individual boxes */
+  .box {
+    flex: 1; /* Makes all boxes equal in size */
+    max-width: 30%; /* Ensures the boxes don't stretch too wide */
+    background-color: #f4f4f4; /* Light gray background */
+    border: 1px solid #ddd; /* Light border around each box */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center-align content */
+    padding: 15px; /* Internal spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  }
+  
+  .box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  .box img {
+    max-width: 100%; /* Ensures the image fits within the box */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded top corners of the image */
+  }
+  
+  .box p {
+    font-size: 1rem; /* Text size */
+    color: #333; /* Text color */
+    margin-top: 10px; /* Space between image and text */
+  }
+  
+  .title-m{
+    text-align: center;
+    margin-top: 100px;
+  }
+   
+  .box-1{
+    text-align: right;
+    font-size: 1rem;
+    color:#E02C6D ;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .camera {
+      flex-direction: column; /* Stacks the text and image vertically on small screens */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .camera div {
+      max-width: 80%; /* Widens the text block for smaller screens */
+    }
+  
+    .camera .img-main {
+      max-width: 80%; /* Adjusts image size for small screens */
+    }
+  }
